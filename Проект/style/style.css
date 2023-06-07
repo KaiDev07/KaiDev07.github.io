@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Rosario:wght@700&display=swap'); /* font-family: 'DM Sans', sans-serif; font-family: 'Rosario', sans-serif; */
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+.header-wrapper {
+    padding: 60px 80px;
+}
+
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-link-container {
+    display: inline-block;
+    margin-left: 50px;
+}
+
+nav a {
+    text-decoration: none;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.3rem;
+    color: #222222;
+}
+
+#header-logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+.header-other {
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.lang-change {
+    font-size: 1.6rem;
+}
+
+.header-lang-change-container {
+    display: inline-block;
+}
+
+.lang-change a {
+    text-decoration: none;
+    color: black;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.lang-change div:nth-child(5) a {
+    color: #09A66D;
+}
+
+#header-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    background-color: #F3FBF8;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.search-icon {
+    transform: scale(0.8);
+}
+
+#header-btn {
+    padding: 8px 60px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.2rem;
+    background-color: #09A66D;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    transition: background-color 0.5s;
+}
+
+header a::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #09A66D;
+    transform: scaleX(0);
+    transform-origin: 0%;
+    transition: all 0.3s;
+}
+
+header a:hover::before {
+    transform: scaleX(1);
+}
+
+header a:active {
+    font-weight: 500;
+}
+
+#header-circle:hover {
+    transform: scale(1.2);
+}
+
+#header-btn:hover {
+    background-color: #009933;
+}
+
+#header-btn:active {
+    box-shadow: inset 0 0 5px 0 black;
+}
+
+#welcome {
+    background-color: #F3FBF8;
+    position: relative;
+}
+
+.welcome-wrapper {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+#welcome-leaves {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 650px;
+    max-width: 50%;
+}
+
+.welcome-text {
+    text-align: center;
+}
+
+.welcome-text h1 {
+    font-family: 'Rosario', sans-serif;
+    font-size: 5rem;
+    color: #222222;
+    margin-bottom: 40px;
+}
+
+.welcome-text p {
+    width: 35%;
+    margin: 0 auto;
+    font-family: 'DM Sans', sans-serif;
+    color: #555555;
+    font-size: 1.8rem;
+}
+
+.welcome-btn {
+    width: 11%;
+    margin: 0 auto;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.welcome-btn span {
+    font-size: 1.3rem;
+    font-family: 'DM Sans', sans-serif;
+    color: #222222;
+    margin-right: 10px;
+    font-weight: 500;
+}
+
+#welcome-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 66px;
+    height: 66px;
+    border-radius: 33px;
+    background-color: #09A66D;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.welcome-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#welcome-veggies {
+    width: 53%;
+}
+
+.welcome-boxes {
+    width: 18%;
+}
+
+.box {
+    width: 100%;
+    height: 130px;
+    background-color: white;
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: all 0.5s;
+}
+
+.box img {
+    width: 22%;
+}
+
+.box-text {
+    width: 40%;
+    text-align: center;
+}
+
+.box-text h1 {
+    font-weight: 400;
+    font-size: 3rem;
+    font-family: 'DM Sans', sans-serif;
+    margin-bottom: 0px;
+    margin-top: 20px;
+}
+
+.box-text p {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.3rem;
+    margin-top: 0px;
+}
+
+#welcome-circle:hover, .box:hover {
+    transform: scale(1.1);
+}
